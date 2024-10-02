@@ -68,7 +68,6 @@ class GenreDetail(APIView):
                 status=status.HTTP_200_OK
             )
 
-
     def delete(self, request, pk):
         self.get_object(pk).delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
